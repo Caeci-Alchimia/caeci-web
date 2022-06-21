@@ -16,11 +16,11 @@ text-align: center;
 	vertical-align: bottom;
 	font-size:20
 }
-table td.blue {background-color:lightgray}
-table td.aliceblue {background-color:aliceblue;}
-table td.orange {background-color:orange;}
-table td.darkseagreen {background-color:darkseagreen;}
-table td.yellow {background-color:yellow;}
-table td.white {background-color:#FFFFFF;}
-table td.white-color {color: white;border:none;}
-table td.cursive span {font-family: "Brush script MT";}
+.blue {background-color:lightgray}
+.aliceblue {background-color:aliceblue;}
+.orange {background-color:orange;}
+.darkseagreen {background-color:darkseagreen;}
+.yellow {background-color:yellow;}
+.white {background-color:#FFFFFF;}
+.white-color {color: white;border:none;}
+.cursive span {font-family: "Brush script MT";}
