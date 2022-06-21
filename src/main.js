@@ -43,8 +43,9 @@ class Table {
 }
 
 //	Defining
-const	canva		= document.getElementById ('canva')
-const	address = 'http://localhost:8000/data/elements.csv';
+const	canva		= document.getElementById ('canva'),
+	protocol	= window.location.protocol,
+	address 	= protocol+'/data/elements.csv';
 get_csv (address);
 
 
