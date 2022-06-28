@@ -1,21 +1,27 @@
 .empty {
-	visibility	: hidden;
-}		
+	visibility: hidden;
+}
+
 table h1 {
-	max-height:25px;
+	max-height: 25px;
 }
+
 td {
-	min-width: 4em;
-text-align: center;
-	vertical-align: center;
+	width: 5em;
+	height: 5em;
+	text-align: center;
+	vertical-align: middle;
 	border: outset;
+	position: relative;
 }
+
 th {
-min-height: 5em;  
-text-align: center;
+	min-height: 5em;  
+	text-align: center;
 	vertical-align: bottom;
 	font-size:20
 }
+
 .blue {background-color:lightgray}
 .aliceblue {background-color:aliceblue;}
 .orange {background-color:orange;}
@@ -24,3 +30,36 @@ text-align: center;
 .white {background-color:#FFFFFF;}
 .white-color {color: white;border:none;}
 .cursive span {font-family: "Brush script MT";}
+
+.Metal {
+	background-color: orange;
+}
+
+.Semimetal {
+	background-color: green;
+}
+
+.Ametal {
+	background-color: yellow;
+}
+
+.Nobre {
+	background-color: gray;
+}
+
+.number {
+	font-size: 1em;
+	position: absolute;
+	/* center the content for a parent with position: relative */
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.symbol {
+	font-size: 1.5em;
+}
+
+td {
+	border: 1px solid black;
+}
