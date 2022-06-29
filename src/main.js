@@ -134,8 +134,7 @@ class Element {
 	get_symbol	= ()=> `<spam class='symbol'>${this.symbol}</spam>`;
 	get_name	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_cell	= ()=> {
-		let	content	= this.get_number() + this.get_symbol();
-		return `<td class="${this.family}">${content}</td>`;
+		return `<td aria-label="${this.name}" class="${this.family}">${this.get_symbol()}</td>`;
 	}
 }
 
