@@ -2,6 +2,31 @@
 	visibility: hidden;
 }
 
+@media only screen and (orientation: portrait) {
+	html {
+		transform: rotate(-90deg);
+		transform-origin: left top;
+		width: 100vh;
+		height: 100vw;
+		overflow-x: hidden;
+		position: absolute;
+		top: 100%;
+		left: 0;
+	}
+}
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	border-spacing: 0;
+}
+
+table {
+	height: 100%;
+	width: 100%;
+}
+
 table h1 {
 	max-height: 25px;
 }
