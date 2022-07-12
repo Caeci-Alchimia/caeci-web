@@ -13,8 +13,7 @@ class Element {
 	get_symbol	= ()=> `<spam class='symbol'>${this.symbol}</spam>`;
 	get_name	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_cell	= ()=> {
-		let	content	= this.get_number() + this.get_symbol();
-		return `<td class="${this.family}">${content}</td>`;
+		return `<td aria-label="${this.name}" class="${this.family}">${this.get_symbol()}</td>`;
 	}
 }
 
@@ -105,14 +104,15 @@ function format (raw) {
 	})
 	organize_lines (all_elements);
 }
+
 //	Loading datasheet
 function get_csv (address) {
 	let	request	= new XMLHttpRequest ();
 	request.open ('GET', address, true);
 	request.send(null);
-	request.onreadystatechange	= () => {
-		if (request.readyState === 4 && request.status	=== 200) {
-			let content = request.responseText
+ 	request.onreadystatechange	= () => {
+ 		if (request.readyState === 4 && request.status	=== 200) {
+ 			let content = request.responseText
 			format (content);
 		}
 	}
