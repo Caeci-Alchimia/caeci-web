@@ -44,7 +44,7 @@ class Table {
 //	Defining
 const	canva		= document.getElementById ('canva'),
 	protocol	= window.location.protocol,
-	address 	= protocol+'/Periodic_Table_HTML'+'/data/elements.csv';
+	address 	= protocol+'/data/elements.csv';
 get_csv (address);
 
 
