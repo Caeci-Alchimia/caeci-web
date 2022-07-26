@@ -13,7 +13,7 @@ class Element {
 	get_symbol	= ()=> `<spam class='symbol'>${this.symbol}</spam>`;
 	get_name	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_cell	= ()=> {
-		return `<td aria-label="${this.name}" class="${this.family}">${this.get_symbol()}</td>`;
+		return `<td aria-label="${this.name}" class="${this.family}" onclick="alert('teste')">${this.get_symbol()}</td>`;
 	}
 }
 
