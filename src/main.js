@@ -1,15 +1,16 @@
 //	This must be a module
 
 class Element {
-	constructor (number, symbol, name, x, y, family) {
+	constructor (number, symbol, name, x, y, family, at_mass) {
 		this.number	= number;
 		this.symbol	= symbol;
 		this.name	= name;
 		this.x		= x;
 		this.y		= y;
 		this.family	= family;
+		this.mass	= at_mass
 	}
-	get_alert	= ()=> `Name:${this.name} Symbol:${this.symbol} Number:${this.number}  Family:${this.family}`;
+	get_alert	= ()=> `Nome:${this.name} Simbolo atomico:${this.symbol} Numero atomico:${this.number}  Familia:${this.family} Massa atomica:${this.mass}`;
 	get_number	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_symbol	= ()=> `<spam class='symbol'>${this.symbol}</spam>`;
 	get_name	= ()=> `<spam class='number'>${this.number}</spam>`;
@@ -100,7 +101,8 @@ function format (raw) {
 			x_pos	= parseInt (prop[4]),
 			y_pos	= parseInt (prop[5]),
 			family	= prop[6];
-		let	element	= new Element (number, symbol, name, x_pos, y_pos, family);
+			at_mass	= prop[7];		
+		let	element	= new Element (number, symbol, name, x_pos, y_pos, family, at_mass);
 		all_elements.push (element)
 	})
 	organize_lines (all_elements);
