@@ -1,4 +1,4 @@
-;number; symbol; name; x; y; family; atomic mass;
+;número atômico; simbolo; nome; x; y; família; massa atômica;
 ;1  ;H  ;Hidrogênio     ;1  ;1;None         ;1.01 u;
 ;2  ;He ;Hélio          ;18 ;1;Nobre        ;4.00 u;    
 ;3  ;Li ;Lítio          ;1  ;2;Metal        ;6.94 u;
@@ -82,21 +82,21 @@
 
 #Volta
 
-;104 ;Rf ;Rutherfórdio  ;4  ;7 ;Especial2  ;267.00 u;
-;105 ;Db ;Dúbnio        ;5  ;7 ;Especial2  ;268.00 u;
-;106 ;Sg ;Seabórgio     ;6  ;7 ;Especial2  ;269.00 u;
-;107 ;Bh ;Bóhrio        ;7  ;7 ;Especial2  ;270.00 u;
-;108 ;Hs ;Hássio        ;8  ;7 ;Especial2  ;269.00 u;
-;109 ;Mt ;Meitnério     ;9  ;7 ;Especial2  ;278.00 u;
-;110 ;Ds ;Darmstádtio   ;10 ;7 ;Especial2  ;281.00 u;
-;111 ;Rg ;Roentgênio    ;11 ;7 ;Especial2  ;281.00 u;
-;112 ;Cn ;Copernício    ;12 ;7 ;Especial2  ;285.00 u;
-;113 ;Nh ;Nihônio       ;13 ;7 ;Especial2  ;286.00 u;
-;114 ;Fl ;Fleróvio      ;14 ;7 ;Especial2  ;289.00 u;
-;115 ;Mc ;Moscóvio      ;15 ;7 ;Especial2  ;288.00 u;
-;116 ;Lv ;Livermório    ;16 ;7 ;Especial2  ;293.00 u;
-;117 ;Ts ;Tennesso      ;17 ;7 ;Especial2  ;294.00 u;
-;118 ;Og ;Oganessônio   ;18 ;7 ;Especial2  ;293.00 u;
+;104 ;Rf ;Rutherfórdio  ;4  ;7 ;Indefinido  ;267.00 u;
+;105 ;Db ;Dúbnio        ;5  ;7 ;Indefinido ;268.00 u;
+;106 ;Sg ;Seabórgio     ;6  ;7 ;Indefinido ;269.00 u;
+;107 ;Bh ;Bóhrio        ;7  ;7 ;Indefinido ;270.00 u;
+;108 ;Hs ;Hássio        ;8  ;7 ;Indefinido ;269.00 u;
+;109 ;Mt ;Meitnério     ;9  ;7 ;Indefinido ;278.00 u;
+;110 ;Ds ;Darmstádtio   ;10 ;7 ;Indefinido ;281.00 u;
+;111 ;Rg ;Roentgênio    ;11 ;7 ;Indefinido ;281.00 u;
+;112 ;Cn ;Copernício    ;12 ;7 ;Indefinido ;285.00 u;
+;113 ;Nh ;Nihônio       ;13 ;7 ;Indefinido ;286.00 u;
+;114 ;Fl ;Fleróvio      ;14 ;7 ;Indefinido ;289.00 u;
+;115 ;Mc ;Moscóvio      ;15 ;7 ;Indefinido ;288.00 u;
+;116 ;Lv ;Livermório    ;16 ;7 ;Indefinido ;293.00 u;
+;117 ;Ts ;Tennesso      ;17 ;7 ;Indefinido ;294.00 u;
+;118 ;Og ;Oganessônio   ;18 ;7 ;Indefinido ;293.00 u;
 
 #Pula uma linha
 
@@ -122,12 +122,12 @@
 ;92 ;U ;Urânio          ;7  ;10;Metal      ;238.03 u;
 ;93 ;Np ;Neptúnio       ;8  ;10;Metal      ;237.05 u;
 ;94 ;Pu ;Plutônio       ;9  ;10;Metal      ;244.06 u;
-;95 ;Am ;Amerício       ;10 ;10;Especial2  ;243.00 u;
-;96 ;Cm ;Cúrio          ;11 ;10;Especial2  ;247.00 u;
-;97 ;Bk ;Berkélio       ;12 ;10;Especial2  ;247.00 u;
-;98 ;Cf ;Califórnio     ;13 ;10;Especial2  ;251.00 u;
-;99 ;Es ;Einstênio      ;14 ;10;Especial2  ;252.00 u; 
-;100 ;Fm ;Férmio        ;15 ;10;Especial2  ;257.00 u;
-;101 ;Md ;Mendelévio    ;16 ;10;Especial2  ;257.00 u;
-;102 ;No ;Nobélio       ;17 ;10;Especial2  ;259.00 u;
-;103 ;Lr ;Laurêncio     ;18 ;10;Especial2  ;262.00 u;
+;95 ;Am ;Amerício       ;10 ;10;Indefinido ;243.00 u;
+;96 ;Cm ;Cúrio          ;11 ;10;Indefinido ;247.00 u;
+;97 ;Bk ;Berkélio       ;12 ;10;Indefinido ;247.00 u;
+;98 ;Cf ;Califórnio     ;13 ;10;Indefinido ;251.00 u;
+;99 ;Es ;Einstênio      ;14 ;10;Indefinido ;252.00 u; 
+;100 ;Fm ;Férmio        ;15 ;10;Indefinido ;257.00 u;
+;101 ;Md ;Mendelévio    ;16 ;10;Indefinido ;257.00 u;
+;102 ;No ;Nobélio       ;17 ;10;Indefinido ;259.00 u;
+;103 ;Lr ;Laurêncio     ;18 ;10;Indefinido ;262.00 u;
