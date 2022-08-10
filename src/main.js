@@ -127,3 +127,7 @@ function show_dialog(){
 	dialog.style.visibility = "visible"
 }
 
+function hide_dialog(){
+	dialog.style.visibility = "hidden"
+}
+
