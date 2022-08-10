@@ -121,3 +121,13 @@ function get_csv (address) {
 	}
 }
 
+const dialog = document.getElementById("Dialog"); // Get element.
+dialog.style.visibility = "hidden"; // Show element.
+function show_dialog(){
+	dialog.style.visibility = "visible"
+}
+
+/*
+dialog. style. visibility = "hidden"; // Hide element.
+const visible = element. style. visibility; // Get visibility.
+*/
