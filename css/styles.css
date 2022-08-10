@@ -96,10 +96,11 @@ td {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 505px;
-	height: 160px;
-	margin-left: 506px;
+	width: 1010px;
+	height: 480px;
+	margin-left: 254px;
 	position: absolute;   
-	top: 319px;
+	top: 160px;
    background: #FFFFFF;
+   font-size: -webkit-xxx-large;
 }
