@@ -88,3 +88,9 @@ th {
 td {
 	border: 1px solid black;
 }
+
+/* Dialog */
+
+#Dialog {
+	visibility:hidden
+}
