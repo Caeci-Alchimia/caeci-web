@@ -17,6 +17,7 @@ class Element {
 	get_cell	= ()=> {
 		return `<td aria-label="${this.name}" class="${this.family}" onclick="show_dialog()">${this.get_symbol()}</td>`;
 	}
+	
 }
 
 class EmptyCell extends Element {
@@ -131,3 +132,10 @@ function hide_dialog(){
 	dialog.style.visibility = "hidden"
 }
 
+function clicked (){
+	if (dialog.style.visibility=='visible'){
+		hide_dialog();
+	} else {
+		show_dialog();
+	}
+}
