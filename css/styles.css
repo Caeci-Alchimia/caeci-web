@@ -103,6 +103,7 @@ td {
 	top: 160px;
    background: #FFFFFF;
    font-size: 60;
+   border: groove;
 }
 
 #background {
