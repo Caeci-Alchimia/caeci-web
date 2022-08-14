@@ -47,20 +47,15 @@ th {
 	font-size:20
 }
 
-.blue {background-color:lightgray}
-.aliceblue {background-color:aliceblue;}
-.orange {background-color:orange;}
-.darkseagreen {background-color:darkseagreen;}
-.yellow {background-color:yellow;}
-.white {background-color:#FFFFFF;}
-.white-color {color: white;border:none;}
-.cursive span {font-family: "Brush script MT";}
+.Nenhuma {
+	background-color: cornflowerblue;
+}
 
 .Metal {
 	background-color: orange;
 }
 
-.Semimetal {
+.Semi-metal {
 	background-color: green;
 }
 
@@ -87,4 +82,28 @@ th {
 
 td {
 	border: 1px solid black;
+}
+
+/* Dialog */
+
+#Dialog {
+	visibility:hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	margin-left: 0;
+	position: absolute;   
+	top: 0;
+   background: #FFFFFF;
+   font-size: 60;
+   border: solid;
+}
+
+#background {
+		height:100%; 
+		width:100%; 
+		position:absolute;
+		background-color:white;
 }

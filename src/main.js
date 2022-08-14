@@ -10,13 +10,15 @@ class Element {
 		this.family	= family;
 		this.mass	= at_mass
 	}
-	get_alert	= ()=> `Nome:${this.name} Simbolo atomico:${this.symbol} Numero atomico:${this.number}  Familia:${this.family} Massa atomica:${this.mass}`;
+	
+	get_information = ()=> `clicked ('${this.name},<Br> Símbolo: ${this.symbol}, <Br> Número atômico: ${this.number}, <Br> Família: ${this.family}, <Br> Massa atômica: ${this.mass}')`;
 	get_number	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_symbol	= ()=> `<spam class='symbol'>${this.symbol}</spam>`;
 	get_name	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_cell	= ()=> {
-		return `<td aria-label="${this.name}" class="${this.family}" onclick="alert('${this.get_alert()}')">${this.get_symbol()}</td>`;
+		return `<td aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
 	}
+	
 }
 
 class EmptyCell extends Element {
@@ -46,7 +48,7 @@ class Table {
 //	Defining
 const	canva	= document.getElementById ('canva'),
 	href	= window.location.href,
-	address = href+'/data/elements.csv';
+	address = href+'data/elements.csv';
 get_csv (address);
 
 
@@ -121,3 +123,22 @@ function get_csv (address) {
 	}
 }
 
+const dialog = document.getElementById("Dialog"); // Get element.
+const content = document.getElementById("DialogContent");
+
+function show_dialog(information){
+	dialog.style.visibility = "visible";
+	content.innerHTML= information;
+}
+
+function hide_dialog(){
+	dialog.style.visibility = "hidden";
+}
+
+function clicked (conteudo){
+	if (dialog.style.visibility=='visible'){
+		hide_dialog();
+	} else {
+		show_dialog(conteudo);
+	}
+}
