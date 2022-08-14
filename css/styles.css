@@ -91,11 +91,11 @@ td {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 1010px;
-	height: 600px;
-	margin-left: 254px;
+	width: 100%;
+	height: 100%;
+	margin-left: 0;
 	position: absolute;   
-	top: 80px;
+	top: 0;
    background: #FFFFFF;
    font-size: 60;
    border: solid;
