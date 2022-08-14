@@ -1,17 +1,18 @@
 //	This must be a module
 
 class Element {
-	constructor (number, symbol, name, x, y, family, at_mass) {
+	constructor (number, symbol, name, x, y, family,family2, at_mass) {
 		this.number	= number;
 		this.symbol	= symbol;
 		this.name	= name;
 		this.x		= x;
 		this.y		= y;
 		this.family	= family;
+		this.family2	= family2;
 		this.mass	= at_mass
 	}
 	
-	get_information = ()=> `clicked ('${this.name},<Br> Símbolo: ${this.symbol}, <Br> Número atômico: ${this.number}, <Br> Família: ${this.family}, <Br> Massa atômica: ${this.mass}')`;
+	get_information = ()=> `clicked ('${this.name}, ${this.family}, ${this.family2}, <Br> Símbolo: ${this.symbol}, <Br> Número atômico: ${this.number}, <Br> Massa atômica: ${this.mass}')`;
 	get_number	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_symbol	= ()=> `<spam class='symbol'>${this.symbol}</spam>`;
 	get_name	= ()=> `<spam class='number'>${this.number}</spam>`;
