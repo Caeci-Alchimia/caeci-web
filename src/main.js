@@ -123,6 +123,7 @@ function get_csv (address) {
 }
 
 const dialog = document.getElementById("Dialog"); // Get element.
+const content = document.getElementById("DialogContent");
 
 function show_dialog(){
 	dialog.style.visibility = "visible"
