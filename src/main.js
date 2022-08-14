@@ -104,8 +104,9 @@ function format (raw) {
 			x_pos	= parseInt (prop[4]),
 			y_pos	= parseInt (prop[5]),
 			family	= prop[6];
-			at_mass	= prop[7];		
-		let	element	= new Element (number, symbol, name, x_pos, y_pos, family, at_mass);
+			family2= prop[7];
+			at_mass	= prop[8];		
+		let	element	= new Element (number, symbol, name, x_pos, y_pos, family, family2, at_mass);
 		all_elements.push (element)
 	})
 	organize_lines (all_elements);
