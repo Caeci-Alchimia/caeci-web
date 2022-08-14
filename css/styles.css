@@ -56,6 +56,10 @@ th {
 .white-color {color: white;border:none;}
 .cursive span {font-family: "Brush script MT";}
 
+.Nenhuma {
+	background-color: cornflowerblue;
+}
+
 .Metal {
 	background-color: orange;
 }
