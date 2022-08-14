@@ -15,7 +15,7 @@ class Element {
 	get_symbol	= ()=> `<spam class='symbol'>${this.symbol}</spam>`;
 	get_name	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_cell	= ()=> {
-		return `<td aria-label="${this.name}" class="${this.family}" onclick="clicked ()">${this.get_symbol()}</td>`;
+		return `<td aria-label="${this.name}" class="${this.family}" onclick="clicked ('skylab')">${this.get_symbol()}</td>`;
 	}
 	
 }
@@ -134,10 +134,10 @@ function hide_dialog(){
 	dialog.style.visibility = "hidden";
 }
 
-function clicked (){
+function clicked (conteudo){
 	if (dialog.style.visibility=='visible'){
 		hide_dialog();
 	} else {
-		show_dialog("TP");
+		show_dialog(conteudo);
 	}
 }
