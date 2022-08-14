@@ -48,7 +48,7 @@ class Table {
 //	Defining
 const	canva	= document.getElementById ('canva'),
 	href	= window.location.href,
-	address = href+'/data/elements.csv';
+	address = href+'data/elements.csv';
 get_csv (address);
 
 
