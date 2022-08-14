@@ -1,6 +1,6 @@
 ;número atômico; simbolo; nome; x; y; família; massa atômica;
 ;1  ;H  ;Hidrogênio     ;1  ;1;Nenhuma      ;1,01;
-;2  ;He ;Hélio          ;18 ;1;Nobre        ;4,00;    
+;2  ;He ;Hélio          ;18 ;1;Gás Nobre    ;4,00;    
 ;3  ;Li ;Lítio          ;1  ;2;Metal        ;6,94;
 ;4  ;Be ;Berílio        ;2  ;2;Metal        ;9,01;
 ;5  ;B  ;Boro           ;13 ;2;Semimetal    ;10,81;
@@ -8,7 +8,7 @@
 ;7  ;N  ;Nitrogênio     ;15 ;2;Ametal       ;14,01;
 ;8  ;O  ;Oxigênio       ;16 ;2;Ametal       ;16,00;
 ;9  ;F  ;Fluor          ;17 ;2;Ametal       ;19,00;
-;10 ;Ne ;Neônio         ;18 ;2;Nobre        ;20,18;
+;10 ;Ne ;Neônio         ;18 ;2;Gás Nobre    ;20,18;
 ;11 ;Na ;Sódio          ;1  ;3;Metal        ;22,99;
 ;12 ;Mg ;Magnésio       ;2  ;3;Metal        ;24,31;
 ;13 ;Al ;Alumínio       ;13 ;3;Metal        ;26,98;
@@ -16,7 +16,7 @@
 ;15 ;P  ;Fósforo        ;15 ;3;Ametal       ;30,97;
 ;16 ;S  ;Enxofre        ;16 ;3;Ametal       ;32,07;
 ;17 ;Cl ;Cloro          ;17 ;3;Ametal       ;35,45;
-;18 ;Ar ;Argônio        ;18 ;3;Nobre        ;39,45;
+;18 ;Ar ;Argônio        ;18 ;3;Gás Nobre    ;39,45;
 ;19 ;K  ;Potássio       ;1  ;4;Metal        ;39,10;
 ;20 ;Ca ;Cálcio         ;2  ;4;Metal        ;40,08;
 ;21 ;Sc ;Escândio       ;3  ;4;Metal        ;44,96;
@@ -34,7 +34,7 @@
 ;33 ;As ;Arsênio        ;15 ;4;Ametal       ;74,92;
 ;34 ;Se ;Selênio        ;16 ;4;Ametal       ;78,96;
 ;35 ;Br ;Bromo          ;17 ;4;Ametal       ;79,90;
-;36 ;Kr ;Criptônio      ;18 ;4;Nobre        ;83,80;
+;36 ;Kr ;Criptônio      ;18 ;4;Gás Nobre    ;83,80;
 ;37 ;Rb ;Rubídio        ;1  ;5;Metal        ;85,47;
 ;38 ;Sr ;Estrôncio      ;2  ;5;Metal        ;87,62;
 ;39 ;Y  ;Ítrio          ;3  ;5;Metal        ;88,91;
@@ -52,7 +52,7 @@
 ;51 ;Sb ;Antimônio      ;15 ;5;Semimetal    ;121,76;
 ;52 ;Te ;Telúrio        ;16 ;5;Semimetal    ;127,60;
 ;53 ;I  ;Iodo           ;17 ;5;Ametal       ;126,90;
-;54 ;Xe ;Xenônio        ;18 ;5;Nobre        ;131,29;
+;54 ;Xe ;Xenônio        ;18 ;5;Gás Nobre    ;131,29;
 ;55 ;Cs ;Césio          ;1  ;6;Metal        ;132,91;
 ;56 ;Ba ;Bário          ;2  ;6;Metal        ;137,33;
 #Série Lantanídio
@@ -72,7 +72,7 @@
 ;83 ;Bi ;Bismuto        ;15 ;6;Metal       ;208,98;
 ;84 ;Po ;Polônio        ;16 ;6;Semimetal   ;209,00;
 ;85 ;At ;Ástato         ;17 ;6;Ametal      ;210,00;
-;86 ;Rn ;Radônio        ;18 ;6;Nobre       ;222,00;
+;86 ;Rn ;Radônio        ;18 ;6;Gás Nobre   ;222,00;
 ;87 ;Fr ;Frâncio        ;1  ;7;Metal       ;223,02;
 ;88 ;Ra ;Rádio          ;2  ;7;Metal       ;226,03;
 
