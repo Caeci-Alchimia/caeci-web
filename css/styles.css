@@ -15,16 +15,10 @@
 	}
 }
 
-* {
-	margin: 0;
-	border: 0;
-	padding: 0;
-	border-spacing: 0;
-}
-
 table {
 	height: 100%;
 	width: 100%;
+	border-spacing: 0;
 }
 
 table h1 {
@@ -32,12 +26,13 @@ table h1 {
 }
 
 td {
-	width: 5em;
-	height: 5em;
+	width: 4em;
+	height: 4em;
 	text-align: center;
 	vertical-align: middle;
 	border: outset;
 	position: relative;
+	border: 1px solid black;
 }
 
 th {
@@ -78,10 +73,6 @@ th {
 
 .symbol {
 	font-size: 1.5em;
-}
-
-td {
-	border: 1px solid black;
 }
 
 /* Dialog */
