@@ -12,7 +12,7 @@ class Element {
 		this.mass	= at_mass
 	}
 	
-	get_information = ()=> `clicked ('${this.name}, ${this.family}, ${this.family2}, <Br> Símbolo: ${this.symbol}, <Br> Número atômico: ${this.number}, <Br> Massa atômica: ${this.mass}')`;
+	get_information = ()=> `clicked ('${this.name}, ${this.family},<Br>${this.family2}, <Br> Símbolo: ${this.symbol}, <Br> Número atômico: ${this.number}, <Br> Massa atômica: ${this.mass}')`;
 	get_number	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_symbol	= ()=> `<spam class='symbol'>${this.symbol}</spam>`;
 	get_name	= ()=> `<spam class='number'>${this.number}</spam>`;
