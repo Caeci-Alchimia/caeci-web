@@ -2,7 +2,7 @@
 	visibility: hidden;
 }
 
-@media only screen and (orientation: portrait) {
+/*@media only screen and (orientation: portrait) {
 	html {
 		transform: rotate(-90deg);
 		transform-origin: left top;
@@ -13,7 +13,7 @@
 		top: 100%;
 		left: 0;
 	}
-}
+}*/
 
 table {
 	height: 100%;
