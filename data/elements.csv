@@ -3,7 +3,7 @@
 ;2  ;He ;Hélio          ;18 ;1;Gás Nobre;Grupo 18, Família 8A, Primeiro período    ;4,00;    
 ;3  ;Li ;Lítio          ;1  ;2;Metal;Grupo 1, Família 1A, Segundo período        ;6,94;
 ;4  ;Be ;Berílio        ;2  ;2;Metal;Grupo 2, Família 2A, Segundo período        ;9,01;
-;5  ;B  ;Boro           ;13 ;2;Semi-metal;Grupo 13, Família 3A, Segundo período    ;10,81;
+;5  ;B  ;Boro           ;13 ;2;Ametal;Grupo 13, Família 3A, Segundo período    ;10,81;
 ;6  ;C  ;Carbono        ;14 ;2;Ametal;Grupo 14, Família 4A, Segundo período       ;12,01;
 ;7  ;N  ;Nitrogênio     ;15 ;2;Ametal;Grupo 15, Família 5A, Segundo período       ;14,01;
 ;8  ;O  ;Oxigênio       ;16 ;2;Ametal;Grupo 16, Família 6A, Segundo período       ;16,00;
@@ -12,7 +12,7 @@
 ;11 ;Na ;Sódio          ;1  ;3;Metal;Grupo 1, Família 1A, Terceiro período        ;22,99;
 ;12 ;Mg ;Magnésio       ;2  ;3;Metal;Grupo 2, Família 2A, Terceiro período        ;24,31;
 ;13 ;Al ;Alumínio       ;13 ;3;Metal;Grupo 13, Família 3A, Terceiro período      ;26,98;
-;14 ;Si ;Silício        ;14 ;3;Semi-metal;Grupo 14, Família 4A, Terceiro período    ;28,09;
+;14 ;Si ;Silício        ;14 ;3;Ametal;Grupo 14, Família 4A, Terceiro período    ;28,09;
 ;15 ;P  ;Fósforo        ;15 ;3;Ametal;Grupo 15, Família 5A, Terceiro período       ;30,97;
 ;16 ;S  ;Enxofre        ;16 ;3;Ametal;Grupo 16, Família 6A, Terceiro período       ;32,07;
 ;17 ;Cl ;Cloro          ;17 ;3;Ametal;Grupo 17, Família 7A, Terceiro período       ;35,45;
@@ -30,7 +30,7 @@
 ;26 ;Cu ;Cobre          ;11 ;4;Metal;Grupo 11, Família 1B, Quarto período        ;65,55;
 ;30 ;Zn ;Zinco          ;12 ;4;Metal;Grupo 12, Família 2B, Quarto período        ;65,38;  
 ;31 ;Ga ;Gálio          ;13 ;4;Metal;Grupo 13, Família 3A, Quarto período        ;69,72;
-;32 ;Ge ;Germânio       ;14 ;4;Semi-metal;Grupo 14, Família 4A, Quarto período    ;72,64;
+;32 ;Ge ;Germânio       ;14 ;4;Ametal;Grupo 14, Família 4A, Quarto período    ;72,64;
 ;33 ;As ;Arsênio        ;15 ;4;Ametal;Grupo 15, Família 5A, Quarto período       ;74,92;
 ;34 ;Se ;Selênio        ;16 ;4;Ametal;Grupo 16, Família 6A, Quarto período       ;78,96;
 ;35 ;Br ;Bromo          ;17 ;4;Ametal;Grupo 17, Família 7A, Quarto período       ;79,90;
@@ -49,8 +49,8 @@
 ;48 ;Cd ;Cádmio         ;12 ;5;Metal;Grupo 12, Família 2B, Quinto período        ;112,41;
 ;49 ;In ;Índio          ;13 ;5;Metal;Grupo 13, Família 3A, Quinto período        ;114,82;
 ;50 ;Sn ;Estanho        ;14 ;5;Metal;Grupo 14, Família 4A, Quinto período        ;118,71;
-;51 ;Sb ;Antimônio      ;15 ;5;Semi-metal;Grupo 15, Família 5A, Quinto período    ;121,76;
-;52 ;Te ;Telúrio        ;16 ;5;Semi-metal;Grupo 16, Família 6A, Quinto período    ;127,60;
+;51 ;Sb ;Antimônio      ;15 ;5;Ametal;Grupo 15, Família 5A, Quinto período    ;121,76;
+;52 ;Te ;Telúrio        ;16 ;5;Ametal;Grupo 16, Família 6A, Quinto período    ;127,60;
 ;53 ;I  ;Iodo           ;17 ;5;Ametal;Grupo 17, Família 7A, Quinto período       ;126,90;
 ;54 ;Xe ;Xenônio        ;18 ;5;Gás Nobre;Grupo 18, Família 8A, Quinto período    ;131,29;
 ;55 ;Cs ;Césio          ;1  ;6;Metal;Grupo 1, Família 1A, Sexto período        ;132,91;
@@ -70,7 +70,7 @@
 ;81 ;Tl ;Tálio          ;13 ;6;Metal;Grupo 13, Família 3A, Sexto período       ;204,38;
 ;82 ;Pb ;Chumbo         ;14 ;6;Metal;Grupo 14, Família 4A, Sexto período       ;207,20;
 ;83 ;Bi ;Bismuto        ;15 ;6;Metal;Grupo 15, Família 5A, Sexto período       ;208,98;
-;84 ;Po ;Polônio        ;16 ;6;Semi-metal;Grupo 16, Família 6A, Sexto período   ;209,00;
+;84 ;Po ;Polônio        ;16 ;6;Ametal;Grupo 16, Família 6A, Sexto período   ;209,00;
 ;85 ;At ;Ástato         ;17 ;6;Ametal;Grupo 17, Família 7A, Sexto período      ;210,00;
 ;86 ;Rn ;Radônio        ;18 ;6;Gás Nobre;Grupo 18, Família 8A, Sexto período   ;222,00;
 ;87 ;Fr ;Frâncio        ;1  ;7;Metal;Grupo 1, Família 1A, Sétimo período       ;223,02;
