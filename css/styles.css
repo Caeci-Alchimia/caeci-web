@@ -15,6 +15,27 @@
 	}
 }
 
+#loading-page {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	color: rgb(12, 66, 12);
+	font-size: 3em;
+	text-align: center;
+}
+
+#loading-page figcaption {
+	width: 800px;
+}
+
+#loading-page .loading-figure {
+	margin: auto;
+	display: block;
+}
+
+#periodic-table {
+	display: none;
+}
 
 table {
 	height: 100%;

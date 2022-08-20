@@ -1,5 +1,24 @@
 //	This must be a module
 
+function sleep(milliseconds) {
+	const date = Date.now();
+	let currentDate = null;
+	do {
+		currentDate = Date.now();
+	} while (currentDate - date < milliseconds);
+}
+
+function loadPage () {
+	loading_page = document.getElementById('loading-page');
+	periodic_table = document.getElementById('periodic-table');
+
+	sleep(4000);
+
+	// hide loading page
+	loading_page.style.display = 'none';
+	periodic_table.style.display = 'block';
+}
+
 class Element {
 	constructor (number, symbol, name, x, y, family,family2, at_mass) {
 		this.number	= number;

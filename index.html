@@ -5,19 +5,30 @@
 		<title></title>
 		<link rel='stylesheet' href='css/styles.css'>
 	</head>
-	<body>
-		
-		<div onclick="hide_dialog()" tabindex="1" id="background"> </div> 
-	
-		<div id='canva'></div>
-				
-		<div id="Dialog" onclick="hide_dialog()" aria-labelledby="DialogContent" role="dialog" tabindex="-1" >
-  			
-			<div role="document">
-    				<h2 id="DialogContent" tabindex="-1">Informações do elemento</h2>
+	<body onload="loadPage()">
+		<main>
+			<div id="loading-page">
+				<figure class="loading-figure">
+					<img src="data/blind-chemistry.jpeg" alt="Logo da Tabela Periódica"/>
+					<figcaption>
+						Uma tabela periódica pensada para pessoas cegas e com baixa visão
+					</figcaption>
+				</figure>
+			</div>
+			<div id="periodic-table">
+				<div onclick="hide_dialog()" tabindex="1" id="background"> </div> 
+			
+				<div id='canva'></div>
+						
+				<div id="Dialog" onclick="hide_dialog()" aria-labelledby="DialogContent" role="dialog" tabindex="-1" >
+					
+					<div role="document">
+							<h2 id="DialogContent" tabindex="-1">Informações do elemento</h2>
 
-  			</div>
-		</div>
+					</div>
+				</div>
+			</div>
+		</main>
 		<script src='src/main.js'></script>
 	</body>
 </html>
