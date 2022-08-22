@@ -20,7 +20,7 @@ function loadPage () {
 }
 
 class Element {
-	constructor (number, symbol, name, x, y, family,family2, at_mass) {
+	constructor (number, symbol, name, x, y, family,family2,acronym, at_mass) {
 		this.number	= number;
 		this.symbol	= symbol;
 		this.name	= name;
@@ -28,10 +28,11 @@ class Element {
 		this.y		= y;
 		this.family	= family;
 		this.family2	= family2;
-		this.mass	= at_mass
+		this.acronym = acronym;
+		this.mass	= at_mass;
 	}
 	
-	get_information = ()=> `clicked ('${this.name}, ${this.family},<Br>${this.family2}, <Br> Símbolo: ${this.symbol}, <Br> Número atômico: ${this.number}, <Br> Massa atômica: ${this.mass}')`;
+	get_information = ()=> `clicked ('${this.name}, ${this.family},<Br>${this.family2}, <Br> Símbolo: ${this.acronym}, <Br> Número atômico: ${this.number}, <Br> Massa atômica: ${this.mass}')`;
 	get_number	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_symbol	= ()=> `<spam class='symbol'>${this.symbol}</spam>`;
 	get_name	= ()=> `<spam class='number'>${this.number}</spam>`;
@@ -124,8 +125,9 @@ function format (raw) {
 			y_pos	= parseInt (prop[5]),
 			family	= prop[6];
 			family2= prop[7];
-			at_mass	= prop[8];		
-		let	element	= new Element (number, symbol, name, x_pos, y_pos, family, family2, at_mass);
+			acronym= prop[8]
+			at_mass	= prop[9];		
+		let	element	= new Element (number, symbol, name, x_pos, y_pos, family, family2, acronym, at_mass);
 		all_elements.push (element)
 	})
 	organize_lines (all_elements);
