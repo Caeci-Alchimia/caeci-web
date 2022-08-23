@@ -84,6 +84,10 @@ th {
 	background-color: gray;
 }
 
+.Indefinido {
+	background-color: cornflowerblue;
+}
+
 .number {
 	font-size: 1em;
 	position: absolute;
