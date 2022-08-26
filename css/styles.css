@@ -15,10 +15,6 @@
 	}
 }
 
-body {
-	background: green;
-}
-
 #loading-page {
 	display: flex;
 	justify-content: center;
