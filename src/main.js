@@ -9,6 +9,9 @@ function sleep(milliseconds) {
 }
 
 function loadPage () {
+
+	screen.orientation.lock('portrait');
+
 	loading_page = document.getElementById('loading-page');
 	periodic_table = document.getElementById('periodic-table');
 
@@ -69,7 +72,7 @@ class Table {
 //	Defining
 const	canva	= document.getElementById ('canva'),
 	href	= window.location.href,
-	address = href+'data/elements.csv';
+	address = 'data/elements.csv';
 get_csv (address);
 
 
