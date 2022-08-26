@@ -10,7 +10,7 @@ function sleep(milliseconds) {
 
 function loadPage () {
 
-	screen.orientation.lock('landscape');
+	screen.orientation.lock('portrait');
 	document.getElementById("slogan").focus();
 
 	loading_page = document.getElementById('loading-page');
