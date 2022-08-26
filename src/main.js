@@ -10,7 +10,8 @@ function sleep(milliseconds) {
 
 function loadPage () {
 
-	screen.orientation.lock('portrait');
+	screen.orientation.lock('landscape');
+	document.getElementById("slogan").focus();
 
 	loading_page = document.getElementById('loading-page');
 	periodic_table = document.getElementById('periodic-table');
