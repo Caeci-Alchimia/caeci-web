@@ -27,7 +27,7 @@
 ;26 ;Fe ;Ferro          ;8  ;4	;Metal			;Grupo 8, Quarto período		;F-e ;55,9;
 ;27 ;Co ;Cobalto        ;9  ;4	;Metal			;Grupo 9, Quarto período		;C-o ;58,9;
 ;28 ;Ni ;Níquel         ;10 ;4	;Metal			;Grupo 10, Quarto período		;N-i ;58,7;
-;26 ;Cu ;Cobre          ;11 ;4	;Metal			;Grupo 11, Quarto período		;C-u ;65,6;
+;29 ;Cu ;Cobre          ;11 ;4	;Metal			;Grupo 11, Quarto período		;C-u ;65,6;
 ;30 ;Zn ;Zinco          ;12 ;4	;Metal			;Grupo 12, Quarto período		;Z-n ;65,4;  
 ;31 ;Ga ;Gálio          ;13 ;4	;Metal			;Grupo 13, Quarto período		;G-a ;69,7;
 ;32 ;Ge ;Germânio       ;14 ;4	;Ametal		;Grupo 14, Quarto período		;G-e ;72,6;
@@ -64,7 +64,7 @@
 ;75 ;Re ;Rênio          ;7  ;6	;Metal			;Grupo 7, Sexto período		;R-e ;186,2;
 ;76 ;Os ;Ósmio          ;8  ;6	;Metal			;Grupo 8, Sexto período		;O-s ;190,2;
 ;77 ;Ir ;Irídio         ;9  ;6	;Metal			;Grupo 9, Sexto período		;I-r ;192,2;
-;78 ;Pl ;Platina        ;10 ;6	;Metal			;Grupo 10, Sexto período		;P-l ;195,1;
+;78 ;Pt ;Platina        ;10 ;6	;Metal			;Grupo 10, Sexto período		;P-t ;195,1;
 ;79 ;Au ;Ouro           ;11 ;6	;Metal			;Grupo 11, Sexto período		;A-u ;197,0;
 ;80 ;Hg ;Mercúrio       ;12 ;6	;Metal			;Grupo 12, Sexto período		;H-g ;200,6;
 ;81 ;Tl ;Tálio          ;13 ;6	;Metal			;Grupo 13, Sexto período		;T-l ;204,4;
