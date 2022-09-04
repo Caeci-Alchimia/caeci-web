@@ -15,7 +15,7 @@ function loadPage () {
 
 	loading_page = document.getElementById('loading-page');
 	periodic_table = document.getElementById('periodic-table');
-
+	
 	sleep(4000);
 
 	// hide loading page
