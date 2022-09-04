@@ -152,7 +152,6 @@ function get_csv (address) {
 
 const dialog = document.getElementById("Dialog"); // Get element.
 const content = document.getElementById("DialogContent");
-const role = document.getElementById("logo");
 
 function show_dialog(information){
 	dialog.style.visibility = "visible";
