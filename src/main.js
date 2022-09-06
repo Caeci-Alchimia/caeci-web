@@ -8,6 +8,8 @@ function sleep(milliseconds) {
 	} while (currentDate - date < milliseconds);
 }
 
+loadPage();
+
 function loadPage () {
 
 	screen.orientation.lock('portrait');
