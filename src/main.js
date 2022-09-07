@@ -9,6 +9,14 @@ function sleep(milliseconds) {
 }
 
 function loadPage () {
+	// swiped-right
+	document.addEventListener('swiped-right', function(e) {
+		// alert('Swiped right!');
+	});
+
+	document.addEventListener('swiped-left', function(e) {
+		// alert('Swiped left!');
+	});
 
 	screen.orientation.lock('portrait');
 	document.getElementById("slogan").focus();
