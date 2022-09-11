@@ -1,4 +1,21 @@
 //	This must be a module
+var currentTabIndex = 0;
+
+function nextTabIndex() {
+	currentTabIndex++;
+	if (currentTabIndex > 118) {
+		currentTabIndex = 1;
+	}
+	document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0].focus();
+}
+
+function previousTabIndex() {
+	currentTabIndex--;
+	if (currentTabIndex < 1) {
+		currentTabIndex = 118;
+	}
+	document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0].focus();
+}
 
 function sleep(milliseconds) {
 	const date = Date.now();
@@ -11,11 +28,13 @@ function sleep(milliseconds) {
 function loadPage () {
 	// swiped-right
 	document.addEventListener('swiped-right', function(e) {
-		// alert('Swiped right!');
+		// console.log('Swiped right!');
+		nextTabIndex();
 	});
 
 	document.addEventListener('swiped-left', function(e) {
 		// alert('Swiped left!');
+		previousTabIndex();
 	});
 
 	screen.orientation.lock('portrait');
@@ -31,6 +50,21 @@ function loadPage () {
 	periodic_table.style.display = 'block';
 }
 
+function OnFocusOut() {
+    var currentElement = $get(currentElementId); // ID set by OnFOcusIn
+    var curIndex = currentElement.tabIndex; //get current elements tab index
+    if(curIndex == currentTabIndex) { //if we are on the last tabindex, go back to the beginning
+        curIndex = 0;
+    }
+    var tabbables = document.querySelectorAll(".tabable"); //get all tabable elements
+    for(var i=0; i<tabbables.length; i++) { //loop through each element
+        if(tabbables[i].tabIndex == (curIndex+1)) { //check the tabindex to see if it's the element we want
+            tabbables[i].focus(); //if it's the one we want, focus it and exit the loop
+            break;
+        }
+    }
+}
+
 class Element {
 	constructor (number, symbol, name, x, y, family,family2,acronym, at_mass) {
 		this.number	= number;
@@ -43,13 +77,17 @@ class Element {
 		this.acronym = acronym;
 		this.mass	= at_mass;
 	}
-	
+
 	get_information = ()=> `clicked ('${this.name}, ${this.family},<Br>${this.family2}, <Br> Símbolo: ${this.acronym}, <Br> Número atômico: ${this.number}, <Br> Massa atômica: ${this.mass}')`;
 	get_number	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_symbol	= ()=> `<spam class='symbol'>${this.symbol}</spam>`;
 	get_name	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_cell	= ()=> {
-		return `<td aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+		if (this.number == null) {
+			return `<td aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+		} else {
+			return `<td tabindex="${this.number}" aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+		}
 	}
 	
 }
