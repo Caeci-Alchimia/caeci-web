@@ -6,7 +6,8 @@ function nextTabIndex() {
 	if (currentTabIndex > 118) {
 		currentTabIndex = 1;
 	}
-	document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0].focus();
+	elem = document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0];
+	elem.focus();
 }
 
 function previousTabIndex() {
@@ -14,7 +15,8 @@ function previousTabIndex() {
 	if (currentTabIndex < 1) {
 		currentTabIndex = 118;
 	}
-	document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0].focus();
+	elem = document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0];
+	elem.focus()
 }
 
 function sleep(milliseconds) {
@@ -36,6 +38,12 @@ function loadPage () {
 		// alert('Swiped left!');
 		previousTabIndex();
 	});
+
+	document.onkeydown = function(e) {
+		if (e.key === 'Enter') {
+			document.activeElement.onclick();
+		}
+	};
 
 	screen.orientation.lock('portrait');
 	document.getElementById("slogan").focus();
