@@ -7,12 +7,11 @@ class Element {
 		this.y		= y;
 		this.family	= family;
 		this.family2	= family2;
-		this.acronym = acronym;
+		this.acronym	= acronym;
 		this.mass	= at_mass;
 	}
 
 	get_information = ()=> `clicked ('${this.name}, ${this.family},<Br>${this.family2}, <Br> Símbolo: ${this.acronym}, <Br> Número atômico: ${this.number}, <Br> Massa atômica: ${this.mass}')`;
-
 	get_number	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_symbol	= ()=> `<spam class='symbol'>${this.symbol}</spam>`;
 	get_name	= ()=> `<spam class='number'>${this.number}</spam>`;
@@ -23,7 +22,6 @@ class Element {
 			return `<td tabindex="${this.number}" aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
 		}
 	}
-	
 }
 
 class EmptyCell extends Element {
@@ -130,20 +128,20 @@ function get_csv (address) {
 	}
 }
 
-const dialog = document.getElementById("Dialog"); // Get element.
-const content = document.getElementById("DialogContent");
+const dialog	= document.getElementById("Dialog"); // Get element.
+const content	= document.getElementById("DialogContent");
 
 function show_dialog(information){
-	dialog.style.visibility = "visible";
-	content.innerHTML= information;
+	dialog.style.visibility	= "visible";
+	content.innerHTML	= information;
 }
 
 function hide_dialog(){
-	dialog.style.visibility = "hidden";
+	dialog.style.visibility	= "hidden";
 }
 
 function clicked (conteudo){
-	if (dialog.style.visibility=='visible'){
+	if (dialog.style.visibility == 'visible'){
 		hide_dialog();
 	} else {
 		show_dialog(conteudo);
