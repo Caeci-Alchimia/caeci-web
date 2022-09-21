@@ -43,7 +43,7 @@ function loadPage () {
 	loading_page = document.getElementById('loading-page');
 	periodic_table = document.getElementById('periodic-table');
 	
-	sleep(4000);
+	sleep(4);
 
 	// hide loading page
 	loading_page.style.display = 'none';
