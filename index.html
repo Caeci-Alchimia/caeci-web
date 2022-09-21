@@ -1,22 +1,37 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 		<title></title>
 		<link rel='stylesheet' href='css/styles.css'>
 	</head>
-	<body>
-		
-		<div onclick="hide_dialog()" tabindex="1" id="background"> </div> 
-	
-		<div id='canva'></div>
+	<body onload="loadPage()">
+		<main>
+			<div id="loading-page">
 				
-		<div id="Dialog" onclick="hide_dialog()" aria-labelledby="DialogContent" role="dialog" tabindex="-1" >
-  			
-			<div role="document">
-    				<h2 id="DialogContent" tabindex="-1">Informações do elemento</h2>
+				<figure class="loading-figure" >
+					<img src="data/logo.png" alt="Logo da Tabela Periódica"/>
+					<figcaption id="slogan" aria-label="Uma tabela periódica pensada para cegos">
+						Uma tabela periódica<br>pensada para cegos
+					</figcaption>
+				</figure>
+			</div>
+			<div id="periodic-table">
+				<div onclick="hide_dialog()" id="background"> </div> 
+			
+				<div id='canva'></div>
+						
+				<div id="Dialog" onclick="hide_dialog()" aria-labelledby="DialogContent" role="dialog" tabindex="-1" >
+					
+					<div role="document">
+							<h2 id="DialogContent" tabindex="-1">Informações do elemento</h2>
 
-  			</div>
-		</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="src/swiped-events.js"></script>
 		<script src='src/main.js'></script>
 	</body>
 </html>
