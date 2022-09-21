@@ -17,14 +17,7 @@ function previousTabIndex() {
 	elem = document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0];
 	elem.focus()
 }
-
-function sleep(milliseconds) {
-	const date = Date.now();
-	let currentDate = null;
-	do {
-		currentDate = Date.now();
-	} while (currentDate - date < milliseconds);
-}
+const	sleep = (delay_time = 1) => new Promise (resolve => {setTimeout(() => { resolve ('')}, delay_time*1000)})
 
 function loadPage () {
 	// swiped-right
