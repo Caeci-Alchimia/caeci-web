@@ -15,16 +15,32 @@
 	}
 }
 
-* {
-	margin: 0;
-	border: 0;
-	padding: 0;
-	border-spacing: 0;
+#loading-page {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	color: rgb(12, 66, 12);
+	font-size: 3em;
+	text-align: center;
+}
+
+#loading-page figcaption {
+	width: 800px;
+}
+
+#loading-page .loading-figure {
+	margin: auto;
+	display: block;
+}
+
+#periodic-table {
+	display: none;
 }
 
 table {
 	height: 100%;
 	width: 100%;
+	border-spacing: 0;
 }
 
 table h1 {
@@ -32,12 +48,13 @@ table h1 {
 }
 
 td {
-	width: 5em;
-	height: 5em;
+	width: 4em;
+	height: 4em;
 	text-align: center;
 	vertical-align: middle;
 	border: outset;
 	position: relative;
+	border: 1px solid black;
 }
 
 th {
@@ -47,24 +64,16 @@ th {
 	font-size:20
 }
 
-.Nenhuma {
-	background-color: cornflowerblue;
-}
-
 .Metal {
-	background-color: orange;
-}
-
-.Semi-metal {
-	background-color: green;
+	background-color: burlywood;
 }
 
 .Ametal {
-	background-color: yellow;
+	background-color: aliceblue;
 }
 
-.Nobre {
-	background-color: gray;
+.Indefinido {
+	background-color: antiquewhite;
 }
 
 .number {
@@ -80,10 +89,6 @@ th {
 	font-size: 1.5em;
 }
 
-td {
-	border: 1px solid black;
-}
-
 /* Dialog */
 
 #Dialog {
@@ -97,9 +102,10 @@ td {
 	position: absolute;   
 	top: 0;
    background: #FFFFFF;
-   font-size: 60;
+   font-size: 44;
    border: solid;
 }
+
 
 #background {
 		height:100%; 
