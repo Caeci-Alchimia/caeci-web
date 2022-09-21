@@ -1,4 +1,5 @@
 //	This must be a module
+//	Tab controls
 var currentTabIndex = 0;
 
 function nextTabIndex() {
@@ -72,6 +73,8 @@ function OnFocusOut() {
         }
     }
 }
+
+// Elements generator
 
 class Element {
 	constructor (number, symbol, name, x, y, family,family2,acronym, at_mass) {
