@@ -3,7 +3,7 @@ var currentTabIndex = 0;
 
 function nextTabIndex() {
 	currentTabIndex++;
-	if (currentTabIndex > 118) {
+	if (currentTabIndex > 118 + 1) {
 		currentTabIndex = 1;
 	}
 	elem = document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0];
@@ -13,7 +13,7 @@ function nextTabIndex() {
 function previousTabIndex() {
 	currentTabIndex--;
 	if (currentTabIndex < 1) {
-		currentTabIndex = 118;
+		currentTabIndex = 118 + 1;
 	}
 	elem = document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0];
 	elem.focus()
@@ -86,16 +86,16 @@ class Element {
 		this.mass	= at_mass;
 	}
 
-	get_information = ()=> `clicked ('${this.name}, ${this.family},<Br>${this.family2}, <Br> Símbolo: ${this.acronym}, <Br> Número atômico: ${this.number}, <Br> Massa atômica: ${this.mass}')`;
+	get_information = ()=> `clicked ('${this.name}, ${this.family},<Br>${this.family2}, <Br> Símbolo: ${this.acronym}, <Br> Número atômico: ${this.number}, <Br> Massa atômica: ${this.mass}', true)`;
 
 	get_number	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_symbol	= ()=> `<spam class='symbol'>${this.symbol}</spam>`;
 	get_name	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_cell	= ()=> {
 		if (this.number == null) {
-			return `<td aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+			return `<td aria-label="Fora da tabela" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
 		} else {
-			return `<td tabindex="${this.number}" aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+			return `<td tabindex="${this.number + 1}" aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
 		}
 	}
 	
@@ -128,7 +128,8 @@ class Table {
 //	Defining
 const	canva	= document.getElementById ('canva'),
 	href	= window.location.href,
-	address = href+'data/elements.csv';
+	// address = href+'data/elements.csv';
+	address = 'data/elements.csv';
 get_csv (address);
 
 
@@ -213,14 +214,28 @@ function show_dialog(information){
 	content.innerHTML= information;
 }
 
+function show_instructions() {
+	aria_label = 'A melhor forma de cegos utilizarem este aplicativo é clicando sobre a tela sem remoção do dedo. Em seguida, deve-se mover o dedo sobre a tela para navegar sobre a tabela periódica. A posição espacial dos elementos na tabela é tão importante quanto as suas informações.';
+	dialog.style.visibility = "visible";
+	content.innerHTML = `<p aria-label="${aria_label}">${aria_label}</p>`;
+}
+
 function hide_dialog(){
 	dialog.style.visibility = "hidden";
 }
 
-function clicked (conteudo){
-	if (dialog.style.visibility=='visible'){
-		hide_dialog();
+function clicked (conteudo, element) {
+	if (element == true) {
+		if (dialog.style.visibility=='visible'){
+			hide_dialog();
+		} else {
+			show_dialog(conteudo);
+		}
 	} else {
-		show_dialog(conteudo);
+		if (dialog.style.visibility=='visible'){
+			hide_dialog();
+		} else {
+			show_instructions();
+		}
 	}
 }

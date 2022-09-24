@@ -113,3 +113,24 @@ th {
 		position:absolute;
 		background-color:white;
 }
+
+#instructions {
+	position: absolute;
+	top: 10vh;
+	left: 35vw;
+	border: 1px solid black;
+	width: 200px;
+	height: 100px;
+	background-color: #548235;
+}
+
+#instructions .center {
+	color: white;
+	font-size: 1.5em;
+	font-weight: bold;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}
