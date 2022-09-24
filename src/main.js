@@ -93,7 +93,7 @@ class Element {
 	get_name	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_cell	= ()=> {
 		if (this.number == null) {
-			return `<td aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+			return `<td aria-label="Fora da tabela" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
 		} else {
 			return `<td tabindex="${this.number + 1}" aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
 		}
