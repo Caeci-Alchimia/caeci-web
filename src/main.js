@@ -3,7 +3,7 @@ var currentTabIndex = 0;
 
 function nextTabIndex() {
 	currentTabIndex++;
-	if (currentTabIndex > 118) {
+	if (currentTabIndex > 118 + 1) {
 		currentTabIndex = 1;
 	}
 	elem = document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0];
@@ -13,7 +13,7 @@ function nextTabIndex() {
 function previousTabIndex() {
 	currentTabIndex--;
 	if (currentTabIndex < 1) {
-		currentTabIndex = 118;
+		currentTabIndex = 118 + 1;
 	}
 	elem = document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0];
 	elem.focus()
@@ -95,7 +95,7 @@ class Element {
 		if (this.number == null) {
 			return `<td aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
 		} else {
-			return `<td tabindex="${this.number}" aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+			return `<td tabindex="${this.number + 1}" aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
 		}
 	}
 	
@@ -128,7 +128,8 @@ class Table {
 //	Defining
 const	canva	= document.getElementById ('canva'),
 	href	= window.location.href,
-	address = href+'data/elements.csv';
+	// address = href+'data/elements.csv';
+	address = 'data/elements.csv';
 get_csv (address);
 
 
