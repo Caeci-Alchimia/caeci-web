@@ -89,6 +89,10 @@ th {
 	font-size: 1.5em;
 }
 
+.Cloro:nth-letter(2), . Alumínio:nth-letter(2), . Tálio:nth-letter(2),, . Flevório:nth-letter(2) {
+     font-family: 'Brush Script MT';
+}
+
 /* Dialog */
 
 #Dialog {
