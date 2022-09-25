@@ -89,7 +89,7 @@ class Element {
 	get_information = ()=> `clicked ('${this.name}, ${this.family},<Br>${this.family2}, <Br> Símbolo: ${this.acronym}, <Br> Número atômico: ${this.number}, <Br> Massa atômica: ${this.mass}', true)`;
 
 	get_number	= ()=> `<spam class='number'>${this.number}</spam>`;
-	get_symbol	= ()=> `<spam class='symbol ${this.name}'>${this. Symbol}</spam>`;
+	get_symbol	= ()=> `<spam class='symbol'>${this. Symbol}</spam>`;
 	get_name	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_cell	= ()=> {
 		if (this.number == null) {
