@@ -1,24 +1,27 @@
-//	This must be a module
-
 class Element {
-	constructor (number, symbol, name, x, y, family, at_mass) {
+	constructor (number, symbol, name, x, y, family,family2,acronym, at_mass) {
 		this.number	= number;
 		this.symbol	= symbol;
 		this.name	= name;
 		this.x		= x;
 		this.y		= y;
 		this.family	= family;
-		this.mass	= at_mass
+		this.family2	= family2;
+		this.acronym	= acronym;
+		this.mass	= at_mass;
 	}
-	
-	get_information = ()=> `clicked ('${this.name},<Br> Símbolo: ${this.symbol}, <Br> Número atômico: ${this.number}, <Br> Família: ${this.family}, <Br> Massa atômica: ${this.mass}')`;
+
+	get_information = ()=> `clicked ('${this.name}, ${this.family},<Br>${this.family2}, <Br> Símbolo: ${this.acronym}, <Br> Número atômico: ${this.number}, <Br> Massa atômica: ${this.mass}')`;
 	get_number	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_symbol	= ()=> `<spam class='symbol'>${this.symbol}</spam>`;
 	get_name	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_cell	= ()=> {
-		return `<td aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+		if (this.number == null) {
+			return `<td aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+		} else {
+			return `<td tabindex="${this.number}" aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+		}
 	}
-	
 }
 
 class EmptyCell extends Element {
@@ -103,8 +106,10 @@ function format (raw) {
 			x_pos	= parseInt (prop[4]),
 			y_pos	= parseInt (prop[5]),
 			family	= prop[6];
-			at_mass	= prop[7];		
-		let	element	= new Element (number, symbol, name, x_pos, y_pos, family, at_mass);
+			family2= prop[7];
+			acronym= prop[8]
+			at_mass	= prop[9];		
+		let	element	= new Element (number, symbol, name, x_pos, y_pos, family, family2, acronym, at_mass);
 		all_elements.push (element)
 	})
 	organize_lines (all_elements);
@@ -120,25 +125,5 @@ function get_csv (address) {
  			let content = request.responseText
 			format (content);
 		}
-	}
-}
-
-const dialog = document.getElementById("Dialog"); // Get element.
-const content = document.getElementById("DialogContent");
-
-function show_dialog(information){
-	dialog.style.visibility = "visible";
-	content.innerHTML= information;
-}
-
-function hide_dialog(){
-	dialog.style.visibility = "hidden";
-}
-
-function clicked (conteudo){
-	if (dialog.style.visibility=='visible'){
-		hide_dialog();
-	} else {
-		show_dialog(conteudo);
 	}
 }
