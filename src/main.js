@@ -1,6 +1,6 @@
 //	This must be a module
-var currentTabIndex = 0;
 var beginTabIndex = 10;
+var currentTabIndex = beginTabIndex;
 
 function nextTabIndex() {
 	currentTabIndex++;
@@ -63,7 +63,7 @@ function OnFocusOut() {
     var currentElement = $get(currentElementId); // ID set by OnFOcusIn
     var curIndex = currentElement.tabIndex; //get current elements tab index
     if(curIndex == currentTabIndex) { //if we are on the last tabindex, go back to the beginning
-        curIndex = 0;
+        curIndex = beginTabIndex;
     }
     var tabbables = document.querySelectorAll(".tabable"); //get all tabable elements
     for(var i=0; i<tabbables.length; i++) { //loop through each element

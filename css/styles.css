@@ -69,7 +69,8 @@ th {
 }
 
 .Ametal {
-	background-color: aliceblue;
+	/* background-color: aliceblue; */
+	background-color: blue;
 }
 
 .Indefinido {
