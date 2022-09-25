@@ -134,3 +134,16 @@ th {
 	align-items: center;
 	height: 100px;
 }
+
+@media only screen and (orientation: portrait) {
+	#instructions {
+		position: absolute;
+		top: 10vw;
+		left: 30vh;
+		/* left: 0vw; */
+		border: 1px solid black;
+		width: 200px;
+		height: 100px;
+		background-color: #548235;
+	}
+}
