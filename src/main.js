@@ -1,10 +1,11 @@
 //	This must be a module
 var currentTabIndex = 0;
+var beginTabIndex = 10;
 
 function nextTabIndex() {
 	currentTabIndex++;
-	if (currentTabIndex > 118 + 1) {
-		currentTabIndex = 1;
+	if (currentTabIndex > 118 + beginTabIndex) {
+		currentTabIndex = beginTabIndex;
 	}
 	elem = document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0];
 	elem.focus();
@@ -12,8 +13,8 @@ function nextTabIndex() {
 
 function previousTabIndex() {
 	currentTabIndex--;
-	if (currentTabIndex < 1) {
-		currentTabIndex = 118 + 1;
+	if (currentTabIndex < beginTabIndex) {
+		currentTabIndex = 118 + beginTabIndex;
 	}
 	elem = document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0];
 	elem.focus()
@@ -93,9 +94,9 @@ class Element {
 	get_name	= ()=> `<spam class='number'>${this.number}</spam>`;
 	get_cell	= ()=> {
 		if (this.number == null) {
-			return `<td aria-label="Fora da tabela" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+			return `<td class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
 		} else {
-			return `<td tabindex="${this.number + 1}" aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+			return `<td tabindex="${this.number + beginTabIndex}" aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
 		}
 	}
 	
