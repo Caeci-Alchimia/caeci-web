@@ -9,14 +9,7 @@ function nextTabIndex() {
 		currentTabIndex = beginTabIndex;
 	}
 	elem = document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0];
-	focused_components.push(elem);
-	if (focused_components.length == 1) {
-		console.log('instructions');
-		elem = document.getElementById('instructions');
-		elem.focus();
-	} else {
-		elem.focus();
-	}
+	elem.focus();
 }
 
 function previousTabIndex() {
@@ -38,15 +31,15 @@ function sleep(milliseconds) {
 
 function loadPage () {
 	// swiped-right
-	document.addEventListener('swiped-right', function(e) {
-		// console.log('Swiped right!');
-		nextTabIndex();
-	});
+	// document.addEventListener('swiped-right', function(e) {
+	// 	// console.log('Swiped right!');
+	// 	nextTabIndex();
+	// });
 
-	document.addEventListener('swiped-left', function(e) {
-		// alert('Swiped left!');
-		previousTabIndex();
-	});
+	// document.addEventListener('swiped-left', function(e) {
+	// 	// alert('Swiped left!');
+	// 	previousTabIndex();
+	// });
 
 	document.onkeydown = function(e) {
 		if (e.key === 'Enter') {
@@ -106,7 +99,8 @@ class Element {
 		if (this.number == null) {
 			return `<td class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
 		} else {
-			return `<td tabindex="${this.number + beginTabIndex}" aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+			// return `<td tabindex="${this.number + beginTabIndex}" aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+			return `<td aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
 		}
 	}
 	
