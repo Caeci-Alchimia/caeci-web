@@ -1,12 +1,18 @@
 //	This must be a module
+var isFirst = true;
 var beginTabIndex = 10;
 var currentTabIndex = beginTabIndex;
 
 function nextTabIndex() {
-	if (currentTabIndex > 118 + beginTabIndex) {
+	if (isFirst) {
+		isFirst = false;
 		currentTabIndex = beginTabIndex;
+	} else {
+		if (currentTabIndex > 118 + beginTabIndex) {
+			currentTabIndex = beginTabIndex;
+		}
+		currentTabIndex++;
 	}
-	currentTabIndex++;
 	elem = document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0];
 	elem.focus();
 }
