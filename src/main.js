@@ -3,19 +3,19 @@ var beginTabIndex = 10;
 var currentTabIndex = beginTabIndex;
 
 function nextTabIndex() {
-	currentTabIndex++;
 	if (currentTabIndex > 118 + beginTabIndex) {
 		currentTabIndex = beginTabIndex;
 	}
+	currentTabIndex++;
 	elem = document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0];
 	elem.focus();
 }
 
 function previousTabIndex() {
-	currentTabIndex--;
 	if (currentTabIndex < beginTabIndex) {
 		currentTabIndex = 118 + beginTabIndex;
 	}
+	currentTabIndex--;
 	elem = document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0];
 	elem.focus()
 }
