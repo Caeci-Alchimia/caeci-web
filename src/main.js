@@ -1,27 +1,22 @@
 //	This must be a module
 var isFirst = true;
 var beginTabIndex = 10;
-var currentTabIndex = beginTabIndex;
+var currentTabIndex = beginTabIndex - 1;
 
 function nextTabIndex() {
-	if (isFirst) {
-		isFirst = false;
+	currentTabIndex++;
+	if (currentTabIndex > 118 + beginTabIndex) {
 		currentTabIndex = beginTabIndex;
-	} else {
-		if (currentTabIndex > 118 + beginTabIndex) {
-			currentTabIndex = beginTabIndex;
-		}
-		currentTabIndex++;
 	}
 	elem = document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0];
 	elem.focus();
 }
 
 function previousTabIndex() {
+	currentTabIndex--;
 	if (currentTabIndex < beginTabIndex) {
 		currentTabIndex = 118 + beginTabIndex;
 	}
-	currentTabIndex--;
 	elem = document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0];
 	elem.focus()
 }
@@ -65,22 +60,22 @@ function loadPage () {
 	periodic_table.style.display = 'block';
 }
 
-function OnFocusOut() {
-    var currentElement = $get(currentElementId); // ID set by OnFOcusIn
-    var curIndex = currentElement.tabIndex; //get current elements tab index
-    if(curIndex == currentTabIndex) { //if we are on the last tabindex, go back to the beginning
-        curIndex = beginTabIndex;
-    }
-    var tabbables = document.querySelectorAll(".tabable"); //get all tabable elements
-	var instructions = document.getElementById("instructions");
-	tabbables.splice(0, 0, instructions);
-    for(var i=0; i<tabbables.length; i++) { //loop through each element
-        if(tabbables[i].tabIndex == (curIndex+1)) { //check the tabindex to see if it's the element we want
-            tabbables[i].focus(); //if it's the one we want, focus it and exit the loop
-            break;
-        }
-    }
-}
+// function OnFocusOut() {
+//     var currentElement = $get(currentElementId); // ID set by OnFOcusIn
+//     var curIndex = currentElement.tabIndex; //get current elements tab index
+//     if(curIndex == currentTabIndex) { //if we are on the last tabindex, go back to the beginning
+//         curIndex = beginTabIndex;
+//     }
+//     var tabbables = document.querySelectorAll(".tabable"); //get all tabable elements
+// 	var instructions = document.getElementById("instructions");
+// 	tabbables.splice(0, 0, instructions);
+//     for(var i=0; i<tabbables.length; i++) { //loop through each element
+//         if(tabbables[i].tabIndex == (curIndex+1)) { //check the tabindex to see if it's the element we want
+//             tabbables[i].focus(); //if it's the one we want, focus it and exit the loop
+//             break;
+//         }
+//     }
+// }
 
 class Element {
 	constructor (number, symbol, name, x, y, family,family2,acronym, at_mass) {
