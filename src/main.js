@@ -1,7 +1,7 @@
 //	This must be a module
-var isFirst = true;
 var beginTabIndex = 10;
 var currentTabIndex = beginTabIndex - 1;
+var focused_components = [];
 
 function nextTabIndex() {
 	currentTabIndex++;
@@ -9,7 +9,14 @@ function nextTabIndex() {
 		currentTabIndex = beginTabIndex;
 	}
 	elem = document.querySelectorAll(`[tabindex="${currentTabIndex}"]`)[0];
-	elem.focus();
+	focused_components.push(elem);
+	if (focused_components.length == 1) {
+		console.log('instructions');
+		elem = document.getElementById('instructions');
+		elem.focus();
+	} else {
+		elem.focus();
+	}
 }
 
 function previousTabIndex() {
