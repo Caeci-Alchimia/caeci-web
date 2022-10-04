@@ -231,6 +231,11 @@ function hide_dialog(){
 
 function clicked (conteudo, element) {
 	console.log(conteudo);
+	let copiaConteudo = conteudo;
+	copiaConteudo = copiaConteudo.replace( /\s/g, '')
+	let palavras = copiaConteudo.split(",");
+	console.log(palavras);
+	if (palavras[1] == "Especial" || palavras[1] == "Especial-2" || palavras[1] == "Especial-3"){return;}
 	if (element == true) {
 		if (dialog.style.visibility=='visible'){
 			hide_dialog();
