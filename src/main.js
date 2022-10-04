@@ -48,12 +48,12 @@ function loadPage () {
 	};
 
 	screen.orientation.lock('portrait');
-	document.getElementById("slogan").focus();
+	// document.getElementById("slogan").focus();
 
-	loading_page = document.getElementById('loading-page');
-	periodic_table = document.getElementById('periodic-table');
+	// loading_page = document.getElementById('loading-page');
+	// periodic_table = document.getElementById('periodic-table');
 	
-	sleep(4000);
+	// sleep(4000);
 
 	// hide loading page
 	loading_page.style.display = 'none';
