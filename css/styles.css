@@ -76,6 +76,14 @@ th {
 	background-color: antiquewhite;
 }
 
+.Especial-2 {
+	border: 1px solid black;
+}
+
+.Especial-3 {
+	border: 0px solid black;
+}
+
 .number {
 	font-size: 1em;
 	position: absolute;
