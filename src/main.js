@@ -230,6 +230,7 @@ function hide_dialog(){
 }
 
 function clicked (conteudo, element) {
+	console.log(conteudo);
 	if (element == true) {
 		if (dialog.style.visibility=='visible'){
 			hide_dialog();
