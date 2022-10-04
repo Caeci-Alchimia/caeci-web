@@ -110,7 +110,7 @@
 ;55 ;Cs ;Césio          ;1  ;7	;Metal			;Grupo 1, Sexto período		;C-s ;132,9;
 ;56 ;Ba ;Bário          ;2  ;7	;Metal			;Grupo 2, Sexto período		;B-a ;137,3;
 #Série Lantanídio
-;   ;La-Lu;Série Lantanídio;3  ;7;Especial;
+;   ;La-Lu;Série Lantanídio;3  ;7;Especial  ;									;	  ;     ;
 #Volta
 ;72 ;Hf ;Háfnio         ;4  ;7	;Metal			;Grupo 4, Sexto período		;H-f ;178,5;
 ;73 ;Ta ;Tântalo        ;5  ;7	;Metal			;Grupo 5, Sexto período		;T-a ;181,0;
@@ -132,7 +132,7 @@
 
 #Série Actínio
 
-;   ;Ac-Lr;Série Actinídio;3  ;8;Especial;
+;   ;Ac-Lr;Série Actinídio;3  ;8;Especial		;									;	  ;		 ;
 
 #Volta
 
