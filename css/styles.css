@@ -54,7 +54,7 @@ td {
 	vertical-align: middle;
 	border: outset;
 	position: relative;
-	border: 1px solid black;
+	border: -1px solid black;
 }
 
 th {
