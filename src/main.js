@@ -31,15 +31,15 @@ function sleep(milliseconds) {
 
 function loadPage () {
 	// swiped-right
-	// document.addEventListener('swiped-right', function(e) {
-	// 	// console.log('Swiped right!');
-	// 	nextTabIndex();
-	// });
+	document.addEventListener('swiped-right', function(e) {
+		// console.log('Swiped right!');
+		nextTabIndex();
+	});
 
-	// document.addEventListener('swiped-left', function(e) {
-	// 	// alert('Swiped left!');
-	// 	previousTabIndex();
-	// });
+	document.addEventListener('swiped-left', function(e) {
+		// alert('Swiped left!');
+		previousTabIndex();
+	});
 
 	document.onkeydown = function(e) {
 		if (e.key === 'Enter') {
@@ -98,9 +98,11 @@ class Element {
 	get_cell	= ()=> {
 		if (this.number == null) {
 			return `<td class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
-		} else {
-			// return `<td tabindex="${this.number + beginTabIndex}" aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
-			return `<td aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+		} else if (this.symbol == 'Inst') {
+			return `<td tabindex="${beginTabIndex}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+		}else {
+			return `<td tabindex="${this.number + beginTabIndex+1}" aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
+			// return `<td aria-label="${this.name}" class="${this.family}" onclick="${this.get_information ()}">${this.get_symbol()}</td>`;
 		}
 	}
 	
