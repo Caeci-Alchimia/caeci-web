@@ -31,15 +31,15 @@ function sleep(milliseconds) {
 
 function loadPage () {
 	// swiped-right
-	// document.addEventListener('swiped-right', function(e) {
-	// 	// console.log('Swiped right!');
-	// 	nextTabIndex();
-	// });
+	document.addEventListener('swiped-right', function(e) {
+		// console.log('Swiped right!');
+		nextTabIndex();
+	});
 
-	// document.addEventListener('swiped-left', function(e) {
-	// 	// alert('Swiped left!');
-	// 	previousTabIndex();
-	// });
+	document.addEventListener('swiped-left', function(e) {
+		// alert('Swiped left!');
+		previousTabIndex();
+	});
 
 	document.onkeydown = function(e) {
 		if (e.key === 'Enter') {
