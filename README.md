@@ -2,4 +2,4 @@
 Periodic Table for blind people
 
 # Instructions
-See the table preview in this [link](https://htmlpreview.github.io/?https://github.com/bpmsilva/caeci-web/blob/dev/index.html)
+See the table preview in this [link](https://caeci-alchimia.github.io/caeci-web/)
